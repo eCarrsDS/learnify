@@ -157,4 +157,11 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        "lms.djangoapp": [
+            "learnify = learnify.apps:LearnifyConfig",
+        ],
+        "cms.djangoapp": [
+        ],
+    },
 )
